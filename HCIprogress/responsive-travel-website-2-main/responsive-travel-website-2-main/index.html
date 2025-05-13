@@ -57,73 +57,95 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
-            <div class="home__shadow"></div>
+        <section class="home section" id="home">
+    <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
+    <div class="home__shadow"></div>
 
-            <div class="home__container container grid">
-              
-            
-               <div class="home__data">
-                  <h3 class="home__subtitle">
-                     Welcome To Travel
-                  </h3>
-                  <h1 class="home__title">
-                     Explore <br>
-                      The Philippines
-                  </h1>
-                  <p class="home__description">
-                     Live the trips exploring the world, discover 
-                     paradises, islands, mountains and much more,
-                     get your trip now.
-                  </p>
-                  <a href="#" class="button">
-                     Start Your Journey <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            
-               <div class="home__cards grid">
-                  <article class="home__card">
-                     <img src="assets/img/home-trees.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Croatia </h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
+    <div class="home__container container grid">
+        <div class="home__data">
+            <h3 class="home__subtitle">
+                Welcome To Travel
+            </h3>
+            <h1 class="home__title">
+                Explore <br>
+                The Philippines
+            </h1>
+            <p class="home__description">
+                Live the trips exploring the Philippines, discover 
+                paradises, islands, mountains and much more,
+                get your trip now.
+            </p>
+            <a href="#" class="button">
+                Start Your Journey <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
 
-                  <article class="home__card">
-                     <img src="assets/img/home-lake.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Iceland</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
+        <div class="home__cards grid">
+            <article class="home__card" onclick="showDescription('palawan')">
+                <img src="assets/img/home-puerto.jpg" alt="Palawan" class="home__card-img">
+                <h3 class="home__card-title">Palawan</h3>
+                <div class="home__card-shadow"></div>
+            </article>
 
-                  <article class="home__card">
-                     <img src="assets/img/home-mountain.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Italy</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
+            <article class="home__card" onclick="showDescription('siargao')">
+                <img src="assets/img/Siargao.jpg" alt="Siargao" class="home__card-img">
+                <h3 class="home__card-title">Siargao</h3>
+                <div class="home__card-shadow"></div>
+            </article>
 
-                  <article class="home__card">
-                     <img src="assets/img/home-beach.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Spain</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-               </div>
+            <article class="home__card" onclick="showDescription('bohol')">
+                <img src="assets/img/home-bohol.jpg" alt="Bohol" class="home__card-img">
+                <h3 class="home__card-title">Bohol</h3>
+                <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card" onclick="showDescription('aklan')">
+                <img src="assets/img/boracay.jpg" alt="Aklan" class="home__card-img">
+                <h3 class="home__card-title">Aklan</h3>
+                <div class="home__card-shadow"></div>
+            </article>
+        </div>
+
+      <div id="destinationDetails" class="destination-details" style="display:none;">
+    <h2 id="destinationTitle">Explore More</h2>
+    <div class="detail-item">
+        <img id="destinationImage" src="" alt="Destination" style="width: 50%; height: auto;">
+        <div class="description-container">
+            <p id="descriptionText"></p>
+            <div id="destinationRating" class="destination-rating">
+                <!-- Star rating will be inserted here -->
             </div>
-         </section>
+        </div>
+    </div>
+</div>
+</section>
 
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+    color: orange;
+}
+.destination-rating {
+    margin-top: 1rem; /* Space above the rating */
+}
+</style>
+              <!--Diri ko nag change code-->
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
             <div class="about__container container grid">
                <div class="about__data">
                   <h2 class="section__title">
-                     Lean More <br>
-                     About Travel
+                     Learn More <br>
+                     About Philippines
                   </h2>  
                   <p class="about__description">
-                    All the trips around the world are a great
-                    pleasure and happiness for anyon, enjoy
-                    the sights when you travel the world. Travel
-                    safely and without worries, get your trip and 
-                    explore the paradises of the world.
+                    Traveling in the Philippines offers a 
+                    unique blend of stunning landscapes,
+                     vibrant cultures, and warm hospitality,
+                      making every journey an unforgettable 
+                      adventure filled with breathtaking
+                      sights and enriching experiences.
                   </p>
                   <a href="#" class="button">
                      Explore Travel <i class="ri-arrow-right-line"></i>
@@ -146,49 +168,49 @@
             <div class="popular__container container grid">
                <article class="popular__card">
                   <div class="popular__image">
-                     <img src="assets/img/popular-mountain.jpg" alt="popular image" class="popular__img">
+                     <img src="assets/img/popular.mt.jpg" alt="popular image" class="popular__img">
                      <div class="popular__shadow"></div>
                   </div>
 
                   <h2 class="popular__title">
-                     Logan Mountains
+                     Mt. Apo
                   </h2>
 
                   <div class="popular__location">
                      <i class="ri-map-pin-line"></i>
-                     <span>Canada</span>
+                     <span>Mindanao</span>
                   </div>
                </article>
 
                <article class="popular__card">
                   <div class="popular__image">
-                     <img src="assets/img/popular-forest.jpg" alt="popular image" class="popular__img">
+                     <img src="assets/img/sea.jpeg" alt="popular image" class="popular__img">
                      <div class="popular__shadow"></div>
                   </div>
 
                   <h2 class="popular__title">
-                     Spike Forest
+                     Tubbataha Natural Park
                   </h2>
 
                   <div class="popular__location">
                      <i class="ri-map-pin-line"></i>
-                     <span> Irland</span>
+                     <span>  Sulu Sea</span>
                   </div>
                </article>
 
                <article class="popular__card">
                   <div class="popular__image">
-                     <img src="assets/img/popular-lake.jpg" alt="popular image" class="popular__img">
+                     <img src="assets/img/balinsasayaw.jpg" alt="popular image" class="popular__img">
                      <div class="popular__shadow"></div>
                   </div>
 
                   <h2 class="popular__title">
-                     Garda Lake
+                     Balinsasayao Twin Lakes
                   </h2>
 
                   <div class="popular__location">
                      <i class="ri-map-pin-line"></i>
-                     <span> Italy </span>
+                     <span> Negros Oriental </span>
                   </div>
                </article>
 
@@ -209,21 +231,19 @@
                   <div class="explore__data">
                      <h2 class="section__title">
                         Explore The <br>
-                        Best Paradises
+                        Best Paradises in the Philippines
                      </h2>
 
                      <p class="explore__description">
-                        Exploring paradises such as islands and valleys when
-                        traveling the world is one of the greatest experiences
-                        when you travel, it offers you harmony and peace and you can 
-                        enjoy it with great comfort.
+                        Exploring the stunning beaches and lush 
+                        mountains of the Philippines is one of the most 
+                        rewarding experiences you can have, offering a perfect 
+                        blend of tranquility and adventure that allows you to relax 
+                        and immerse yourself in nature's beauty.
                      </p>
                   </div>
 
-                  <div class="explore__user">
-                     <img src="assets/img/explore-perfil.png" alt="explore image" class="explore__perfil">
-                     <span class="explore__name">Paul Jeams</span>
-                  </div>
+                  
                </div>
             </div>
          </section>
